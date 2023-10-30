@@ -56,6 +56,11 @@
     cursor: pointer;
   }
 
+  &__open {
+    height: 100vh;
+    overflow: hidden;
+  }
+
   &__content {
     position: relative;
 
@@ -117,3 +122,4 @@
     pointer-events: auto;
   }
 }
+

@@ -1,0 +1,113 @@
+.page-footer {
+  border: 4px solid $color-cornflower-blue;
+  border-bottom: none;
+  border-radius: 64px 64px 0 0;
+
+  @include vp-767 {
+    border-width: 2px;
+    border-radius: 50px 50px 0 0;
+  }
+}
+
+.page-footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 36px 136px 20px;
+
+  @include vp-1439 {
+    padding: 36px 80px 20px;
+  }
+
+  @include vp-1023 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  @include vp-767 {
+    padding: 18px;
+    font-size: 14px;
+  }
+
+  &.container {
+    max-width: 100%;
+  }
+}
+
+.page-footer__nav {
+  ul{
+    display: flex;
+    flex-wrap: wrap;
+
+    @include vp-1023 {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+
+
+    }
+    li {
+      margin-right: 40px;
+      margin-bottom: 4px;
+
+      @include vp-767 {
+        margin-bottom: 2px;
+      }
+    }
+  }
+
+  @include vp-767 {
+    margin-bottom: 18px;
+  }
+}
+
+.page-footer__social-wrapper {
+  h2  {
+    margin-bottom: 14px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    text-align: end;
+
+    @include vp-1023 {
+      text-align: start;
+    }
+
+    @include vp-767 {
+      margin-bottom: 10px;
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+
+  ul {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 8px;
+  }
+
+  a {
+    svg {
+      fill: $color-cornflower-blue;
+
+      @include vp-767 {
+        width: 27px;
+        height: 27px;
+      }
+    }
+
+    @media (hover: hover), screen and (min-width: 0\0) {
+      &:hover,
+      &:focus,
+      &:focus-visible,
+      &:focus-within {
+        svg {
+          fill: url(#my-gradient) $color-cornflower-blue;
+        }
+      }
+    }
+
+
+
+  }
+}

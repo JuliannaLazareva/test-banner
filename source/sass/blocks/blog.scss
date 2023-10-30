@@ -1,0 +1,149 @@
+.blog {
+  margin-left: 26px;
+  padding-top: 136px;
+
+  @include vp-1279 {
+    margin-left: 6px;
+  }
+
+  @include vp-1023 {
+    margin: 0 auto;
+    padding: 110px;
+  }
+
+  @include vp-767 {
+    padding: 10px;
+  }
+
+  h2 {
+    margin: 0 0 24px;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 40px;
+    text-align: center;
+
+    @include vp-1439 {
+      font-size: 36px;
+    }
+
+    @include vp-767 {
+      margin-bottom: 18px;
+      font-size: 32px;
+    }
+  }
+
+  p {
+    margin-bottom: 12px;
+  }
+}
+
+.blog__container {
+  max-height: 595px;
+  overflow-y: hidden;
+  padding: 20px 40px 20px 20px;
+  border: 3px solid $color-cornflower-blue;
+  border-radius: 100px;
+  background-color: rgba(255, 255, 255, 0.12);
+
+  @include vp-767 {
+    max-height: 422px;
+    padding: 10px 14px 10px 8px;
+    margin-bottom: 108px;
+    border-radius: 50px;
+  }
+}
+
+.blog__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  a {
+    @media (hover: hover), screen and (min-width: 0\0) {
+      &:hover,
+      &:focus,
+      &:focus-visible,
+      &:focus-within {
+        .blog__text {
+          color: $color-default-white;
+          background-color: $color-cornflower-blue;
+        }
+      }
+    }
+  }
+}
+
+.blog__slide {
+  margin-bottom: 16px;
+
+  @include vp-767 {
+    margin-bottom: 10px;
+  }
+}
+
+.blog__scrollbar.swiper-scrollbar {
+  top: 94px;
+  right: 14px;
+  width: 8px;
+  height: 403px;
+  background-color: rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
+
+  .swiper-scrollbar-drag {
+    background-color: $color-cornflower-blue;
+    cursor: pointer;
+  }
+
+  @include vp-767 {
+    top: 58px;
+    right: 4px;
+    width: 4px;
+    height: 301px;
+    border-radius: 4px;
+  }
+}
+
+.blog__text {
+    padding: 16px 64px;
+    border-radius: 196px;
+    background-color: $color-blackcurrant;
+
+    @include vp-1439 {
+      padding: 16px 50px;
+    }
+
+    @include vp-1279 {
+      padding: 16px 32px;
+    }
+
+    @include vp-767 {
+      padding: 14px 34px;
+      border-radius: 40px;
+    }
+
+    p {
+      font-size: 24px;
+      line-height: 28px;
+
+      @include vp-1439 {
+        font-size: 20px;
+        line-height: 24px;
+      }
+
+      @include vp-1279 {
+        font-size: 18px;
+        line-height: 22px;
+      }
+
+      @include vp-767 {
+        margin-bottom: 3px;
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+
+    time {
+      font-family: $ff-futuraPT;
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }

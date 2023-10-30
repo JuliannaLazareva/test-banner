@@ -1,6 +1,11 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
+import {initNavMobile} from './modules/nav-mobile';
+import {initlanguageButton} from './modules/language-toggle';
+import {initBannerSlider} from './modules/banner-slider';
+import {initBlogSlider} from './modules/blog-slider';
+
 
 // ---------------------------------
 
@@ -13,6 +18,12 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // Modules
   // ---------------------------------
+  initNavMobile();
+  initlanguageButton();
+  initBannerSlider();
+
+  initBlogSlider();
+
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
