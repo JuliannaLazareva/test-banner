@@ -2476,6 +2476,7 @@ p {
   grid-template-columns: 1.2fr 334px 1fr;
   gap: 38px;
   min-height: 1022px;
+  height: 100vh;
   padding: 0 10px 0 30px;
   overflow: hidden;
 }
@@ -3041,7 +3042,7 @@ p {
   }
 }
 .page-footer__wrapper.container {
-  max-width: 100%;
+  max-width: 1920px;
 }
 
 .page-footer__nav ul {
@@ -3115,7 +3116,7 @@ p {
 }
 @media (hover: hover), screen and (min-width: 0\0 ) {
   .page-footer__social-wrapper a:hover svg, .page-footer__social-wrapper a:focus svg, .page-footer__social-wrapper a:focus-visible svg, .page-footer__social-wrapper a:focus-within svg {
-    fill: url(#my-cool-gradient) #478bf9;
+    fill: url(#my-gradient) #478bf9;
   }
 }
 

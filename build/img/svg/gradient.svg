@@ -1,0 +1,18 @@
+<svg width="32" height="32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <style type="text/css">
+    path{fill:url(#MyGradient)}
+  </style>
+  <defs>
+        <linearGradient id="MyGradient" x1="32" y1="-1.90735e-06" x2="-5.64706" y2="9.41176">
+          <stop offset="5%" stop-color="#9DADF2"></stop>
+          <stop offset="95%" stop-color="#478BF9"></stop>
+        </linearGradient>
+      </defs>
+  <!-- <defs>
+    <linearGradient id="MyGradient">
+      <stop offset="5%" stop-color="#478BF9"/>
+      <stop offset="95%" stop-color="#9DADF2"/>
+    </linearGradient>
+  </defs> -->
+  <!-- <rect width="32" height="32" /> -->
+</svg>
